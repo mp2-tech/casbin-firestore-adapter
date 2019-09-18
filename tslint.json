@@ -1,0 +1,13 @@
+{
+  "extends": "gts/tslint.json",
+  "linterOptions": {
+    "exclude": [
+      "**/*.json"
+    ],
+    "types": ["mocha"]
+  },
+  "rules": {
+    "no-any": false,
+    "no-default-export": false
+  }
+}

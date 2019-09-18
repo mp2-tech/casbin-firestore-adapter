@@ -1,0 +1,35 @@
+{
+  "name": "casbin-firestore-adapter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "test": "FIRESTORE_EMULATOR_HOST=localhost:8080 mocha -r ts-node/register src/**/*.test.ts",
+    "check": "gts check",
+    "clean": "gts clean",
+    "build": "tsc -p .",
+    "fix": "gts fix",
+    "posttest": "yarn run check"
+  },
+  "devDependencies": {
+    "@google-cloud/firestore": "^2.3.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^10.0.3",
+    "casbin": "^3.0.4",
+    "firebase-admin": "^8.5.0",
+    "gts": "^1.1.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.4.1",
+    "typescript": "~3.5.0"
+  },
+  "peerDependencies": {
+    "@google-cloud/firestore": "^2.3.0",
+    "casbin": "^3.0.4"
+  }
+}
