@@ -2,14 +2,15 @@
   "name": "casbin-firestore-adapter",
   "version": "0.0.0",
   "description": "",
-  "main": "build/src/index.js",
-  "types": "build/src/index.d.ts",
+  "main": "build/src/adapter.js",
+  "types": "build/src/adapter.d.ts",
   "files": [
     "build/src"
   ],
   "license": "Apache-2.0",
   "keywords": [],
   "scripts": {
+    "prepublishOnly": "yarn test && yarn build",
     "test": "FIRESTORE_EMULATOR_HOST=localhost:8080 mocha -r ts-node/register src/**/*.test.ts",
     "check": "gts check",
     "clean": "gts clean",
