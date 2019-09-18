@@ -1,4 +1,4 @@
 ./src
-./build/*.test.js
-./build/*.test.d.ts
-./build/*.test.js.map
+*.test.js
+*.test.d.ts
+*.test.js.map
